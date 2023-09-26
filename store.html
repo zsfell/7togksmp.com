@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7TogkSMP</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .gradient-custom {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/img/hero-bg.png');
+            background-size: cover;
+            height: 100vh;
+
+        }
+        .row {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 1px 1.5rem
+        }
+
+        .row .card{
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+        }
+
+        /* Media Queries */
+
+        /* Laptop / PC */
+        @media (max-width: 1367px){
+            html {
+                font-size: 100%;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 650px){
+            html {
+                font-size: 62.5%;
+            }
+        }
+
+        /* Mobile Phone */
+        @media (max-width: 450px){
+            html {
+                font-size: 55%;
+            }
+        }
+    </style>
+
+    <section class="gradient-custom">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+
+                  <div class="">
+
+                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                    <p class="text-white-50 mb-5">Mohon masukan gamertag dan password kamu.<br>jalankan command <span>/passwd</span> di server untuk membuat password kamu.</p>
+                    <form action="https://7togksmp.com/login/cek" method="POST">
+                        <input type="hidden" name="_token" value="2OhhapgqznkQyaKBGzB3lsEPJSaoPeTVJiKis8OT">                        <div class="form-outline form-white mb-4">
+                            <label class="form-label" for="gamertag">Gamertag</label>
+                            <input type="string" id="gamertag" name="gamertag" class="form-control form-control-lg"/>
+                        </div>
+
+                        <div class="form-outline form-white mb-4">
+                            <label label class="form-label" for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                        </div>
+                        
+                        <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
